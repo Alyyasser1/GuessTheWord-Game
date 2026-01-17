@@ -21,6 +21,8 @@ h1 {
   color: #fff;
   font-weight: normal;
   margin: 0 auto 50px;
+  width: 100%;
+  padding: 20px 10px;
 }
 .guess-game {
   width: 80%;
@@ -35,6 +37,19 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .guess-game .inputs > div span {
+    display: none;
+  }
+  .guess-game .key-colors {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .guess-game .key-colors h2 {
+    font-size: 18px;
   }
 }
 .guess-game .inputs > div {
