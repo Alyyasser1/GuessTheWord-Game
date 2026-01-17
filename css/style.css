@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+.root {
+  --main-color: rgb(26, 26, 61);
+}
+body {
+  margin: 0;
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-align: center;
+  background-color: #27303f;
+  color: #fff;
+  font-weight: normal;
+  margin: 0 auto 50px;
+}
+.guess-game {
+  width: 80%;
+  text-align: center;
+  margin: 20px auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .guess-game {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.guess-game .inputs > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.guess-game .inputs > div span {
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.guess-game .inputs > div input[type="text"] {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 0 5px;
+  caret-color: #27303f;
+  font-size: 50px;
+  background-color: #fff;
+  border: none;
+  border-bottom: 3px solid #27303f;
+  color: #27303f;
+}
+.guess-game .inputs > div input[type="text"]:focus {
+  outline: none;
+}
+.guess-game .inputs > div input[type="text"].in-place {
+  background-color: #18ba89;
+  border-color: #18ba89;
+  color: #fff;
+}
+.guess-game .inputs > div input[type="text"].not-in-place {
+  background-color: #f89e13;
+  border-color: #f89e13;
+  color: #fff;
+}
+.guess-game .inputs > div input[type="text"].wrong {
+  background-color: #27303f;
+  border-color: #27303f;
+  color: #fff;
+}
+.guess-game .control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.guess-game .control button {
+  border: none;
+  background-color: #27303f;
+  border-radius: 6px;
+  padding: 8px 15px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.guess-game .key-color {
+  padding: 15px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.guess-game .key {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.guess-game .key.in-place {
+  background-color: #18ba89;
+  border-color: #18ba89;
+  color: #fff;
+}
+.guess-game .key.not-in-place {
+  background-color: #f89e13;
+  border-color: #f89e13;
+  color: #fff;
+}
+.guess-game .key.wrong {
+  background-color: #27303f;
+  border-color: #27303f;
+  color: #fff;
+}
+.guess-game .key-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+.guess-game .result {
+  text-align: center;
+  font-size: 20px;
+  color: #27303f;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.guess-game .result span {
+  margin-top: 10px;
+  display: block;
+  color: #18ba89;
+  font-weight: bold;
+  font-size: 25px;
+}
+footer {
+  text-align: center;
+  background-color: #27303f;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+}
