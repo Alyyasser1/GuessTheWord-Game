@@ -157,7 +157,7 @@ function hintGenerator() {
 function handleBackspace(event) {
   if (event.key === "Backspace") {
     event.preventDefault();
-    const Inputs = document.querySelectorAll("input:not([disabled]");
+    const Inputs = document.querySelectorAll("input:not([disabled])");
     const currIndex = Array.from(Inputs).indexOf(document.activeElement);
 
     if (currIndex >= 0) {
