@@ -80,6 +80,9 @@ h1 {
   border: none;
   border-bottom: 3px solid #27303f;
   color: #27303f;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-text-fill-color: #27303f;
 }
 .guess-game .inputs > div input[type="text"]:focus {
   outline: none;
