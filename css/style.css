@@ -51,6 +51,12 @@ h1 {
   .guess-game .key-colors h2 {
     font-size: 18px;
   }
+  .guess-game .inputs > div input[type="text"] {
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    margin: 0 4px;
+  }
 }
 .guess-game .inputs > div {
   display: flex;
